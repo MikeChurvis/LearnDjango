@@ -3,6 +3,15 @@
     SmartNotes!
 {% endblock title %}
 {% block content %}
-    <h1>Welcome to SmartNotes!</h1>
-    <p>Today is {{ today }}</p>
+    <section class="hero">
+        <div class="hero-body">
+            <h1 class="title">Welcome to SmartNotes!</h1>
+            <p class="subtitle">Today is {{ today }}</p>
+        </div>
+        <div class="level">
+            <div class="level-item">
+                <a href="{% url "notes.list" %}" class="button is-large is-link">Check out these smart notes!</a>
+            </div>
+        </div>
+    </section>
 {% endblock content %}
